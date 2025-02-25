@@ -1,4 +1,23 @@
-body {
-    background-color: beige;
-    color: blue;
+
+body 
+{
+    background-color: #ffe4c4;
+    color:#000000;
+}
+
+p
+{
+    margin: 10;
+    border: 10px solid #000080;
+    padding: 5px;
+}
+
+.destacando-titulo 
+{
+    color: #22D4FD
+}
+
+.saludo-presentacion
+{
+    color: #000080
 }

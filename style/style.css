@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root
+{
+    --color-primario:#EFF3EA;
+    --color-secundario:#2973B2;
+    --color-terciario:#48A6A7;
+    --color-hover:#9ACBD0;
+
+    --fuente-monserrat: "Montserrat", serif;
+    --fuente-krona: "Krona One", serif;
+}
+
 *
 {
     padding: 0;
@@ -8,8 +19,8 @@
 
 body 
 {
-    background-color: #000000;
-    color:#F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     height: 100vh;
 }
 
@@ -21,12 +32,12 @@ p
 
 .destacando-titulo 
 {
-    color: #22D4FD
+    color: var(--color-terciario);
 }
 
 .saludo-presentacion
 {
-    color: #A6A5F6
+    color: var(--color-secundario);
 }
 
 .presentacion
@@ -48,13 +59,13 @@ p
 .presentacion-contenido-titulo
 {
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fuente-monserrat);
 }
 
 .presentacion-contenido-textoparrafo
 {
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-monserrat);
 }
 
 .presentacion-links-contactos
@@ -76,8 +87,8 @@ p
     font-family: "Montserrat", serif;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
-    border: 4px groove #22D4FD;
+    color: var(--color-secundario);
+    border: 4px groove var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 5px;
@@ -85,7 +96,7 @@ p
 
 .links-contactos:hover
 {
-    background-color: #c5bfbf;
+    background-color: var(--color-hover);
     width: 53%;
     cursor: pointer;
 }
@@ -93,15 +104,15 @@ p
 .sub-titulo-links
 {
     font-size: 24px;
-    font-family: "Krona One", serif;
+    font-family: var(--fuente-krona);
     font-weight: 500;
 }
 
 .footer
 {
     font-size: 20px;
-    background-color: #22D4FD;
-    color: #000000;
+    background-color:var(--color-terciario);
+    color: var(--color-primario);
     padding: 1px;
     text-align: center;
     font-weight: 600;
@@ -109,10 +120,10 @@ p
 
 .header-link
 {
-    font-family: "Montserrat", serif;
+    font-family: var(--fuente-monserrat);
     font-size: 22px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
 }
 

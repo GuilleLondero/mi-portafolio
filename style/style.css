@@ -17,6 +17,26 @@
     margin: 0;
 }
 
+.header-link
+{
+    font-family: var(--fuente-monserrat);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.header
+{
+    padding: 2% 0% 0% 10%;
+}
+
+.header-menu
+{
+    display: flex;
+    gap: 180px;
+}
+
 body 
 {
     background-color: var(--color-primario);
@@ -50,7 +70,7 @@ p
 
 .presentacion-contenido
 {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -58,13 +78,13 @@ p
 
 .presentacion-contenido-titulo
 {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-family: var(--fuente-monserrat);
 }
 
 .presentacion-contenido-textoparrafo
 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-monserrat);
 }
 
@@ -79,11 +99,11 @@ p
 
 .links-contactos
 {
-    width: 310px;
+    width: 40%;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", serif;
     font-weight: 600;
     text-decoration: none;
@@ -103,14 +123,19 @@ p
 
 .sub-titulo-links
 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona);
     font-weight: 500;
 }
 
+.imagen
+{
+    width: 40%;
+}
+
 .footer
 {
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color:var(--color-terciario);
     color: var(--color-primario);
     padding: 1px;
@@ -118,22 +143,26 @@ p
     font-weight: 600;
 }
 
-.header-link
+@media (max-width: 1250px)
 {
-    font-family: var(--fuente-monserrat);
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--color-terciario);
-    text-decoration: none;
+    .header
+    {
+       padding: 7%; 
+    }
+
+    .header-menu
+    {
+        justify-content: center;
+    }
+
+    .presentacion
+    {
+        flex-direction: column-reverse;
+    }
+
+    .presentacion-contenido
+    {
+        width: auto;
+    }
 }
 
-.header
-{
-    padding: 2% 0% 0% 10%;
-}
-
-.header-menu
-{
-    display: flex;
-    gap: 180px;
-}

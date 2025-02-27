@@ -33,7 +33,7 @@ p
 {
     display: flex;
     align-items: center;
-    padding:  3% 10%;
+    padding:  1.9% 10%;
     justify-content: space-between;
 }
 
@@ -80,13 +80,13 @@ p
     border: 4px groove #22D4FD;
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 5px;
 }
 
 .links-contactos:hover
 {
     background-color: #c5bfbf;
-    width: 60%;
+    width: 53%;
     cursor: pointer;
 }
 
@@ -113,6 +113,7 @@ p
     font-size: 22px;
     font-weight: 600;
     color: #22D4FD;
+    text-decoration: none;
 }
 
 .header
@@ -123,5 +124,5 @@ p
 .header-menu
 {
     display: flex;
-    gap: 80px;
+    gap: 180px;
 }
